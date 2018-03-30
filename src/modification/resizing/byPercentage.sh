@@ -14,5 +14,5 @@ function doResize() {
 createTestData
 doResize
 
-ls -l /tmp/sut
-ls -l /tmp/resized
+ls /tmp/sut/* | xargs file 
+ls /tmp/resized/* | xargs file
